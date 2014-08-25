@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1>Header</h1>
+      </header>
+      <p>This link has expired. Please enter your email below to send the activation link again.</p>
+      <form action="/signup/resend-verification" method="POST" autocomplete="off">
+        <input type="hidden" name="_csrf">
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Your email" class="form-control">
+        </div>
+        <input type="submit" value="Send link" class="btn btn-primary">
+      </form>
+      <footer>
+        <h1>Footer</h1>
+      </footer>
+    </div>
+  </body>
+</html>

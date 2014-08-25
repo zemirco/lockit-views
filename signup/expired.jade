@@ -1,0 +1,11 @@
+extend /layout
+
+block content
+  p This link has expired. Please enter your email below to send the activation link again.
+  form(action="/signup/resend-verification", method="POST", autocomplete="off")
+    input(type="hidden", name="_csrf", value=_csrf)
+    div.form-group
+      input.form-control(type="email", id="email", name="email", placeholder="Your email")
+    if error
+      div.alert.alert-warning #{error}
+    input(type="submit", class="btn btn-primary", value="Send link")

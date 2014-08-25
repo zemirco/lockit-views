@@ -1,0 +1,14 @@
+{
+  "name": "lockit-views",
+  "version": "1.0.0",
+  "description": "Views for Lockit",
+  "keywords": [
+    "lockit",
+    "views"
+  ],
+  "author": "Mirco Zeiss <mirco.zeiss@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "jade": "^1.5.0"
+  }
+}
